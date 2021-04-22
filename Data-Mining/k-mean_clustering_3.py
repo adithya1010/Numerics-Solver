@@ -31,21 +31,21 @@ for i in range(0,k):
         c.append("C1")
         c1[0] = (c1[0] + n[i][0]) / 2
         c1[1] = (c1[1] + n[i][1]) / 2
-        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(c[i]) + "\t(" + str(c1[0]) + "," + str(c1[1])+ ")")
+        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(round(t3,4)) + "\t" + str(c[i]) + "\t(" + str(c1[0]) + "," + str(c1[1])+ ")")
         plt.scatter(n[i][0], n[i][1], c='coral')
 
     elif(t2<=t1 and t2<=t3):
         c.append("C2")
         c2[0] = (c2[0] + n[i][0]) / 2
         c2[1] = (c2[1] + n[i][1]) / 2
-        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(c[i]) + "\t(" + str(c2[0]) + "," + str(c2[1]) + ")")
+        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(round(t3,4)) + "\t" + str(c[i]) + "\t(" + str(c2[0]) + "," + str(c2[1]) + ")")
         plt.scatter(n[i][0], n[i][1], c='lightblue')
         
     elif(t3<=t1 and t3<=t2):
         c.append("C3")
         c3[0] = (c3[0] + n[i][0]) / 2
         c3[1] = (c3[1] + n[i][1]) / 2
-        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(c[i]) + "\t(" + str(c3[0]) + "," + str(c3[1]) + ")")
+        print(str(i+1) + "\t" + str(n[i][0]) + "\t" + str(n[i][1]) + "\t" + str(round(t1,4)) + "\t" + str(round(t2,4)) + "\t" + str(round(t3,4)) + "\t" + str(c[i]) + "\t(" + str(c3[0]) + "," + str(c3[1]) + ")")
         plt.scatter(n[i][0], n[i][1], c='black')
 
 plt.title('K Means with 3 Clusters | Republic of Coders')
